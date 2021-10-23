@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:weightSum="8"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Historycal">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_weight="0.7"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:orientation="horizontal"
+    android:layout_height="0dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="ID"
+        android:layout_gravity="center_vertical"
+        android:padding="@dimen/_5sdp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="id"
+        android:gravity="right"
+        android:padding="@dimen/_5sdp"
+        android:layout_gravity="center_vertical"
+
+        android:id="@+id/idtxt"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#d3d3d3"
+        android:layout_weight="0.02"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.7"
+        android:orientation="horizontal"
+        android:layout_height="0dp">
+        <TextView
+            android:padding="@dimen/_5sdp"
+            android:layout_gravity="center_vertical"
+
+            android:layout_width="wrap_content"
+            android:text="Created At"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="122"
+            android:gravity="right"
+            android:padding="@dimen/_5sdp"
+            android:layout_gravity="center_vertical"
+
+            android:id="@+id/createdTxt"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#d3d3d3"
+        android:layout_weight="0.02"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.7"
+        android:orientation="horizontal"
+        android:layout_height="0dp">
+        <TextView
+            android:padding="@dimen/_5sdp"
+
+            android:layout_width="wrap_content"
+            android:text="Risk Score"
+            android:layout_gravity="center_vertical"
+
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="riskScore"
+            android:id="@+id/riskScoreTxt"
+            android:gravity="right"
+            android:padding="@dimen/_5sdp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#d3d3d3"
+        android:layout_weight="0.02"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="0.7"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_height="0dp">
+        <TextView
+            android:padding="@dimen/_5sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:text="Investment Type"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="inv"
+            android:gravity="right"
+            android:padding="@dimen/_5sdp"
+            android:layout_gravity="center_vertical"
+
+            android:id="@+id/investmentTypeTxt"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#d3d3d3"
+        android:layout_weight="0.02"/>
+<com.github.mikephil.charting.charts.LineChart
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+android:layout_margin="@dimen/_9sdp"
+    android:layout_marginEnd="@dimen/_15sdp"
+    android:layout_gravity="center"
+    android:id="@+id/linechart"
+    android:layout_weight="4"
+    />
+
+
+
+</LinearLayout>

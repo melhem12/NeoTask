@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:padding="12dp">
+
+
+    <TextView
+        android:id="@+id/titleTxt"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp" />
+
+
+
+    <TextView
+        android:id="@+id/optionNameTxt"
+        android:gravity="center"
+android:textSize="@dimen/_17ssp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" />
+    <TextView
+        android:id="@+id/riskScoreTxt"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/_22ssp"
+android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" />
+    <TextView
+        android:id="@+id/shortDescTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+
+        android:layout_marginTop="6dp" />
+<View
+    android:layout_width="match_parent"
+    android:background="#808080"
+    android:layout_height="@dimen/_1sdp">
+
+</View>
+    <TextView
+        android:id="@+id/selectedTxt"
+        android:layout_width="wrap_content"
+        android:text="Selected"
+        android:drawableLeft="@drawable/ic_baseline_check_circle_24"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_6sdp" />
+
+</LinearLayout>
+

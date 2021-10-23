@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:weightSum="10"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OptionsActivity">
+<TextView
+    android:layout_width="match_parent"
+    android:text="@string/our_recom"
+    android:textStyle="bold"
+    android:layout_weight="0.5"
+    android:layout_marginTop="@dimen/_15sdp"
+    android:layout_marginLeft="@dimen/_20sdp"
+    android:layout_marginRight="@dimen/_20sdp"
+    android:textSize="@dimen/_20ssp"
+
+    android:layout_height="0dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:text="@string/option_head"
+        android:layout_weight="2"
+        android:layout_height="0dp"/>
+
+    <com.github.islamkhsh.CardSliderViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        app:cardSlider_indicator="@id/indicator"
+        app:cardSlider_otherPagesWidth="@dimen/_15sdp"
+        app:cardSlider_smallAlphaFactor="0.5"
+        app:cardSlider_smallScaleFactor="0.9" />
+
+<com.github.islamkhsh.CardSliderIndicator
+        android:id="@+id/indicator"
+        android:layout_width="wrap_content"
+    android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        app:indicatorsToShow="5" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clickable="false"
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:id="@+id/cont"
+        android:text="Continue">
+    </Button>
+</LinearLayout>
